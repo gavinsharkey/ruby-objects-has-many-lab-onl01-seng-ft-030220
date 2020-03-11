@@ -10,3 +10,4 @@ class Post
   def initialize(title)
     self.title = title
   end
+end
