@@ -7,7 +7,12 @@ class Post
     @@all
   end
 
+  def save
+    @@all << self
+  end
+
   def initialize(title)
     self.title = title
+    self.save
   end
 end
