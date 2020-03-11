@@ -6,3 +6,7 @@ class Post
   def self.all
     @@all
   end
+
+  def initialize(title)
+    self.title = title
+  end
