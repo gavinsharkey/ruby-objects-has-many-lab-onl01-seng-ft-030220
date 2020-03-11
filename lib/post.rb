@@ -15,4 +15,8 @@ class Post
     self.title = title
     self.save
   end
+
+  def author_name
+    self.author.name
+  end
 end
