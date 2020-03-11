@@ -1,6 +1,10 @@
 class Author
   attr_accessor :name
 
+  def self.post_count
+    Post.all.length
+  end
+
   def initialize(name)
     self.name = name
   end
@@ -16,4 +20,5 @@ class Author
   def add_post_by_title(title)
     post = Post.new(title)
     self.add_post(post)
+  end
 end
